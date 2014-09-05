@@ -19,6 +19,7 @@ header, nav, section, footer {
     text-align: left;
 }
 header {
+    font-family: 'Gloria Hallelujah', cursive;
     text-align:center;
     padding:30px;
 }
