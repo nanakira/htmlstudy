@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Chunk';
-    src: url('/font/Chunk.ttf');
+    src: url('./font/Chunk.ttf');
 }
 @font-face {
     font-family: 'rounded-mplus-1c-regular';
-    src: url('/font/rounded-mplus-1c-regular.ttf');
+    src: url('./font/rounded-mplus-1c-regular.ttf');
     /* 
      * rounded-mplus licensed under the MPLUS License
      */
