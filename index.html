@@ -39,8 +39,15 @@
         var msg = "hello " + name;
         return msg;
       };
-      var greet = hello("Tom");
-      console.log(greet);
+      var user = {
+        id: "nanakira",
+        email: "nanakira@xxx.com",
+        score: 70,
+        greet: function(name){
+          console.log("Hello " + name + " from " + this.email);
+        }
+      }
+      user.greet("Tom");
     </script>
   </body>
 </html>
