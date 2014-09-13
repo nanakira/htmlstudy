@@ -21,6 +21,7 @@
         <h2>これはh2だよ</h2>
         <p>Hello world!</p>
         <p>pタグだよ</p>
+        <p id = "msg">p msg</p>
       </article>
     </section>
     <nav>
@@ -33,24 +34,31 @@
       <p>footer2</p>
     </footer>
     <script>
-      var msg = "Hello world!";
-      console.log(msg);
-      console.log(msg.length);
-      var hello = function(name) {
-        var msg = "hello " + name;
-        return msg;
-      };
-      var user = {
-        id: "nanakira",
-        email: "nanakira@xxx.com",
-        score: 70,
-        greet: function(name){
-          console.log("Hello " + name + " from " + this.email);
-        }
-      }
-      user.greet("Tom");
+      // var msg = "Hello world!";
+      // console.log(msg);
+      // console.log(msg.length);
+      // var hello = function(name) {
+        // var msg = "hello " + name;
+        // return msg;
+      // };
+      // var user = {
+      //   id: "nanakira",
+      //   email: "nanakira@xxx.com",
+      //   score: 70,
+      //   greet: function(name){
+      //     console.log("Hello " + name + " from " + this.email);
+      //   }
+      // }
+      // user.greet("Tom");
       console.log(Math.PI);
       console.log(Math.ceil(5.3));
+      
+      var e = document.getElementById('msg');
+      e.style.color = 'red';
+      
+      var greet = document.createElement('p'),
+          text = document.createTextNode('hello world by appendChild');
+      document.body.appendChild(greet).appendChild(text);
     </script>
   </body>
 </html>
