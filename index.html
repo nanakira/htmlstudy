@@ -21,7 +21,8 @@
         <h2>これはh2だよ</h2>
         <p>Hello world!</p>
         <p>pタグだよ</p>
-        <p id = "msg">p msg</p>
+        <p id="msg">p msg</p>
+        <button id="add">Click!</button>
       </article>
     </section>
     <nav>
@@ -56,9 +57,11 @@
       var e = document.getElementById('msg');
       e.style.color = 'red';
       
-      var greet = document.createElement('p'),
-          text = document.createTextNode('hello world by appendChild');
-      document.body.appendChild(greet).appendChild(text);
+      document.getElementById('add').addEventListener('click', function(){
+        var greet = document.createElement('p'),
+            text = document.createTextNode('hello world by click!');
+        document.body.appendChild(greet).appendChild(text);
+      })
     </script>
   </body>
 </html>
