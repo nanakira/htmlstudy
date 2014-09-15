@@ -2,13 +2,10 @@
     font-family: 'Chunk';
     src: url('./font/Chunk.ttf');
 }
-@font-face {
+/*@font-face {
     font-family: 'rounded-mplus-1c-regular';
     src: url('./font/rounded-mplus-1c-regular.ttf');
-    /* 
-     * rounded-mplus licensed under the MPLUS License
-     */
-}
+}*/
 body {
     width:960px;
     margin:20px auto;
@@ -44,7 +41,7 @@ nav {
     width:236px;
 }
 section {
-    font-family:'rounded-mplus-1c-regular';
+    /*font-family:'rounded-mplus-1c-regular';*/
     float:right;
     width:620px;
 }
