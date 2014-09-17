@@ -36,6 +36,7 @@
           <li>2</li>
           <li>3</li>
         </ul>
+        <div id="box" style="width:100px;height:100px;background:red;"></div>
       </article>
     </section>
     <nav>
@@ -62,6 +63,13 @@
       });
       var li = $('<li>').text('just added');
       $('article > ul > li:eq(1)').before(li);
+      $('#box').hide(800);
+      $('#box').fadeIn(1600);
+      $('#box').toggle(800);
+      $('#box').toggle(800);
+      $('#box').toggle(800);
+      $('#box').toggle(800);
+      $('#box').toggle(800);
     </script>
   </body>
 </html>
