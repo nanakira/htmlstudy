@@ -30,6 +30,12 @@
     <section>
       <article>
         <p>jqueryのれんしゅうページデス</p>
+        <ul>
+          <li>0</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
       </article>
     </section>
     <nav>
@@ -54,6 +60,8 @@
         // $('p').css('color', 'red').hide('slow')
         $('p').addClass('mystyle');
       });
+      var li = $('<li>').text('just added');
+      $('article > ul > li:eq(1)').before(li);
     </script>
   </body>
 </html>
