@@ -37,6 +37,12 @@
           <li>3</li>
         </ul>
         <div id="box" style="width:100px;height:100px;background:red;"></div>
+        <input type="text" id="name">
+        <select id="members" name="members">
+          <option>nanakira</option>
+          <option>hachikira</option>
+          <option>kyukira</option>
+        </select>
       </article>
     </section>
     <nav>
@@ -80,6 +86,16 @@
         .mousemove(function(e) {
           $(this).text(e.pageX);
         })
+      $("#name")
+        .focus(function() {
+          $(this).css('background', 'red');
+        })
+        .blur(function() {
+          $(this).css('background', 'white');
+        })
+      $('#members').change(function() {
+        alert('changed!');
+      })
     </script>
   </body>
 </html>
