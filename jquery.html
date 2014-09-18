@@ -43,6 +43,7 @@
           <option>hachikira</option>
           <option>kyukira</option>
         </select>
+        <button>Add</button>
       </article>
     </section>
     <nav>
@@ -95,6 +96,13 @@
         })
       $('#members').change(function() {
         alert('changed!');
+      })
+      $('button').click(function() {
+        var p = $('<p>').text('vanish!').addClass('vanish');
+        $(this).before(p);
+      })
+      $('article').on('click', '.vanish', function() {
+        $(this).remove()
       })
     </script>
   </body>
